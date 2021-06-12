@@ -1,0 +1,63 @@
+#latesworks {
+  padding: 100px 0px;
+  .box {
+      overflow: hidden;
+    position: relative;
+    margin: 10px 0px;
+    img { 
+      
+        transition: .4s;
+      border-radius: 5px;
+    }
+   
+    h3,
+    h4 {
+      line-height: 20px;
+      transition: 0.4s;
+      opacity: 0;
+      color: white;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+    .overlay{
+        border-radius: 5px;
+        position: absolute;
+        top: 0px ;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        transition: 0.4s;
+        opacity: 0;
+        background: rgba(9, 10, 12, 0.5);
+    }
+    h3 {
+      top: 40%;
+      left: 25%;
+      transform: scale(1.6);
+      font-weight: 600;
+    }
+    h4 {
+      top: 50%;
+      left: 45%;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      font-size: 14px;
+    }
+    &:hover {
+      h3 {
+        left: 30%;
+        opacity: 1;
+      }
+      h4{
+        left: 50%;
+        opacity: 1;
+      }
+      img{
+          transform: scale(1.14);
+      }
+      .overlay{
+          opacity: 1;
+      }
+    }
+  }
+}

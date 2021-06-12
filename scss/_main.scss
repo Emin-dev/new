@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+a {
+  outline: 0;
+  &:focus {
+    outline: 0;
+  }
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+}
+$maincolor: #d9832e;
+$font: Poppins, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.date,
+.tag,
+a,
+li {
+  font-family: $font;
+}
+
+img {
+  width: 100%;
+}
+.vh100 {
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 0 10px;
+  position: relative;
+  padding: 0 0 10px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 2px;
+    background: #d9832e;
+    width: 50px;
+  }
+}
+
+h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #555a64;
+}
